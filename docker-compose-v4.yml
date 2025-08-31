@@ -22,7 +22,7 @@ services:
       - gost-network
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      timeout: 10秒
+      timeout: 10s
       retries: 10
 
   backend:
